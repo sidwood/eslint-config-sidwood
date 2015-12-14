@@ -1,0 +1,36 @@
+{
+  "name": "eslint-config-sidwood",
+  "version": "0.1.0",
+  "description": "My personal ESLint configuration",
+  "main": "index.js",
+  "author": "Sid Wood <sidwood@me.com>",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint . --max-warnings 0",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidwood/eslint-config-sidwood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sidwood/eslint-config-sidwood/issues"
+  },
+  "homepage": "https://github.com/sidwood/eslint-config-sidwood#readme",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^1.10.0"
+  },
+  "peerDependencies": {
+    "eslint": "^1.10.0"
+  }
+}
