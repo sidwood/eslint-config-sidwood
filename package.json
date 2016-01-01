@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sidwood",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My personal ESLint configuration",
   "main": "index.js",
   "author": "Sid Wood <sidwood@me.com>",
