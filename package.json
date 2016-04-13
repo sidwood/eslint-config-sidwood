@@ -9,7 +9,7 @@
     "test": "test"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint . --max-warnings 0",
+    "lint": "eslint . --max-warnings 0",
     "test": "npm run lint"
   },
   "repository": {
@@ -28,9 +28,9 @@
   "dependencies": {
   },
   "devDependencies": {
-    "eslint": "^1.10.0"
+    "eslint": "^2.3.0"
   },
   "peerDependencies": {
-    "eslint": "^1.10.0"
+    "eslint": "^2.3.0"
   }
 }
