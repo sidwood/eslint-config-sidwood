@@ -14,6 +14,8 @@ module.exports = {
     'sidwood/rules/variables'
   ],
   'globals': {
+    context: true,
+    given: true
   },
   'parserOptions': {
     ecmaVersion: 2018
