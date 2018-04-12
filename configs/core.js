@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   'env': {
@@ -16,8 +16,8 @@ module.exports = {
   'globals': {
   },
   'parserOptions': {
-    ecmaVersion: 6
+    ecmaVersion: 2018
   },
   'rules': {
   }
-};
+}
