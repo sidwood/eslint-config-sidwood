@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   rules: {
@@ -12,7 +12,13 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
-    'no-unused-vars': ['error', {vars: 'local', args: 'after-used'}],
-    'no-use-before-define': ['error', {functions: false, classes: true}]
+    'no-unused-vars': ['error', {
+      args: 'after-used',
+      vars: 'local'
+    }],
+    'no-use-before-define': ['error', {
+      classes: true,
+      functions: false
+    }]
   }
-};
+}

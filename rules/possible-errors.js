@@ -1,8 +1,11 @@
-'use strict';
+'use strict'
 
 module.exports = {
   rules: {
-    'comma-dangle': ['error', 'never'],
+    'for-direction': 'error',
+    'getter-return': 'error',
+    'no-await-in-loop': 'error',
+    'no-compare-neg-zero': 'error',
     'no-cond-assign': ['error', 'always'],
     'no-console': 'warn',
     'no-constant-condition': 'warn',
@@ -21,14 +24,17 @@ module.exports = {
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
     'no-irregular-whitespace': 'error',
-    'no-negated-in-lhs': 'error',
     'no-obj-calls': 'error',
+    'no-prototype-builtins': 'off',
     'no-regex-spaces': 'error',
     'no-sparse-arrays': 'error',
+    'no-template-curly-in-string': 'error',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
+    'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
     'use-isnan': 'error',
     'valid-jsdoc': 'off',
     'valid-typeof': 'error'
   }
-};
+}

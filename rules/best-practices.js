@@ -1,5 +1,5 @@
 /* eslint no-magic-numbers: "off" */
-'use strict';
+'use strict'
 
 module.exports = {
   rules: {
@@ -28,6 +28,7 @@ module.exports = {
     'no-extra-label': 'error',
     'no-fallthrough': 'error',
     'no-floating-decimal': 'error',
+    'no-global-assign': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
@@ -38,22 +39,26 @@ module.exports = {
     'no-loop-func': 'error',
     'no-magic-numbers': ['error', {
       enforceConst: true,
-      ignoreArrayIndexes: true,
-      ignore: [-1, 0, 1, 42]
+      ignore: [-1, 0, 1, 42],
+      ignoreArrayIndexes: true
     }],
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
-    'no-native-reassign': 'error',
     'no-new': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
     'no-param-reassign': ['error', {props: false}],
-    'no-process-env': 'warn',
     'no-proto': 'error',
     'no-redeclare': 'error',
+    'no-restricted-properties': ['error', {
+      message: 'Please use Object.assign instead of _.extend.',
+      object: '_',
+      property: 'extend'
+    }],
     'no-return-assign': 'error',
+    'no-return-await': 'error',
     'no-script-url': 'error',
     'no-self-assign': 'error',
     'no-self-compare': 'error',
@@ -64,15 +69,19 @@ module.exports = {
     'no-unused-labels': 'error',
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
+    'no-useless-escape': 'error',
+    'no-useless-return': 'error',
     'no-void': 'error',
     'no-warning-comments': ['warn', {
-      terms: ['todo', 'fixme'],
-      location: 'anywhere'
+      location: 'anywhere',
+      terms: ['todo', 'fixme']
     }],
     'no-with': 'error',
+    'prefer-promise-reject-errors': 'error',
     'radix': 'error',
+    'require-await': 'error',
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
     'yoda': 'error'
   }
-};
+}
