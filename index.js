@@ -1,3 +1,3 @@
-'use strict';
+'use strict'
 
-module.exports = require('./configs/node');
+module.exports = require('./configs/node')
