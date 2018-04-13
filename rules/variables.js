@@ -12,13 +12,19 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
-    'no-unused-vars': ['error', {
-      args: 'after-used',
-      vars: 'local'
-    }],
-    'no-use-before-define': ['error', {
-      classes: true,
-      functions: false
-    }]
+    'no-unused-vars': [
+      'error',
+      {
+        args: 'after-used',
+        vars: 'local'
+      }
+    ],
+    'no-use-before-define': [
+      'error',
+      {
+        classes: true,
+        functions: false
+      }
+    ]
   }
 }

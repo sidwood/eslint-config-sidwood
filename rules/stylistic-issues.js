@@ -20,14 +20,17 @@ module.exports = {
     'func-name-matching': 'error',
     'func-names': 'off',
     'func-style': 'off',
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['error', 'consistent'],
     'id-blacklist': 'off',
-    'id-length': ['error', {
-      exceptions: ['_', 'i', 'P'],
-      max: 35,
-      min: 2,
-      properties: 'always'
-    }],
+    'id-length': [
+      'error',
+      {
+        exceptions: ['_', 'h', 'i', 'm', 'P'],
+        max: 35,
+        min: 2,
+        properties: 'always'
+      }
+    ],
     'id-match': 'off',
     'indent': ['error', 2, {SwitchCase: 1}],
     'jsx-quotes': ['error', 'prefer-double'],
@@ -35,23 +38,26 @@ module.exports = {
     'keyword-spacing': 'error',
     'line-comment-position': 'off',
     'linebreak-style': ['error', 'unix'],
-    'lines-around-comment': ['error', {
-      afterBlockComment: false,
-      afterLineComment: false,
-      allowArrayEnd: false,
-      allowArrayStart: true,
-      allowBlockEnd: false,
-      allowBlockStart: true,
-      allowObjectEnd: false,
-      allowObjectStart: true,
-      beforeBlockComment: true,
-      beforeLineComment: false
-    }],
+    'lines-around-comment': [
+      'error',
+      {
+        afterBlockComment: false,
+        afterLineComment: false,
+        allowArrayEnd: false,
+        allowArrayStart: true,
+        allowBlockEnd: false,
+        allowBlockStart: true,
+        allowObjectEnd: false,
+        allowObjectStart: true,
+        beforeBlockComment: true,
+        beforeLineComment: false
+      }
+    ],
     'lines-between-class-members': ['error', 'always'],
     'max-depth': ['error', 3],
     'max-len': ['error', {code: 80, ignoreUrls: true, tabWidth: 4}],
     'max-lines': ['error', 300],
-    'max-nested-callbacks': ['error', 3],
+    'max-nested-callbacks': ['error', 4],
     'max-params': ['error', 4],
     'max-statements': ['error', 15],
     'max-statements-per-line': ['error', {max: 1}],
@@ -97,10 +103,17 @@ module.exports = {
     'semi-spacing': ['error', {after: true, before: false}],
     'semi-style': ['error', 'last'],
     'sort-imports': ['error', {ignoreCase: false}],
-    'sort-keys': ['error', 'asc', {natural: true}],
+    'sort-keys': 'off',
     'sort-vars': ['error', {ignoreCase: false}],
     'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'never',
+        asyncArrow: 'always',
+        named: 'never'
+      }
+    ],
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': ['error', {int32Hint: false}],
     'space-unary-ops': ['error', {nonwords: false, words: true}],

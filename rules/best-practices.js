@@ -32,16 +32,19 @@ module.exports = {
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
-    'no-invalid-this': 'error',
+    'no-invalid-this': 'off',
     'no-iterator': 'error',
     'no-labels': 'off',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': ['error', {
-      enforceConst: true,
-      ignore: [-1, 0, 1, 42],
-      ignoreArrayIndexes: true
-    }],
+    'no-magic-numbers': [
+      'error',
+      {
+        enforceConst: true,
+        ignore: [-1, 0, 1, 42],
+        ignoreArrayIndexes: true
+      }
+    ],
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new': 'error',
@@ -52,11 +55,14 @@ module.exports = {
     'no-param-reassign': ['error', {props: false}],
     'no-proto': 'error',
     'no-redeclare': 'error',
-    'no-restricted-properties': ['error', {
-      message: 'Please use Object.assign instead of _.extend.',
-      object: '_',
-      property: 'extend'
-    }],
+    'no-restricted-properties': [
+      'error',
+      {
+        message: 'Please use Object.assign instead of _.extend.',
+        object: '_',
+        property: 'extend'
+      }
+    ],
     'no-return-assign': 'error',
     'no-return-await': 'error',
     'no-script-url': 'error',
@@ -72,10 +78,13 @@ module.exports = {
     'no-useless-escape': 'error',
     'no-useless-return': 'error',
     'no-void': 'error',
-    'no-warning-comments': ['warn', {
-      location: 'anywhere',
-      terms: ['todo', 'fixme']
-    }],
+    'no-warning-comments': [
+      'warn',
+      {
+        location: 'anywhere',
+        terms: ['todo', 'fixme']
+      }
+    ],
     'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
     'radix': 'error',

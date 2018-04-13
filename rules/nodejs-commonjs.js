@@ -6,10 +6,13 @@ module.exports = {
     'global-require': 'error',
     'handle-callback-err': 'error',
     'no-buffer-constructor': 'error',
-    'no-mixed-requires': ['error', {
-      allowCall: true,
-      grouping: true
-    }],
+    'no-mixed-requires': [
+      'error',
+      {
+        allowCall: true,
+        grouping: true
+      }
+    ],
     'no-new-require': 'error',
     'no-path-concat': 'error',
     'no-process-env': 'error',
