@@ -4,7 +4,9 @@ My personal ESLint configuration.
 
 ## Installation
 
-    npm install --save-dev eslint eslint-config-sidwood
+```bash
+npm install --save-dev eslint eslint-config-sidwood
+```
 
 ## Usage
 
@@ -17,6 +19,12 @@ Create the following `.eslintrc` file in your project root.
 }
 ```
 
-## Tests
+## Linting
 
-    npm test
+This project lints itself.
+
+```bash
+npm link
+npm link eslint-config-sidwood
+npm run lint
+```
