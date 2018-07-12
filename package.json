@@ -13,12 +13,8 @@
   "bugs": {
     "url": "https://github.com/sidwood/eslint-config-sidwood/issues"
   },
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "test": "npm run lint"
+    "lint": "eslint -c ./index.js --max-warnings 0 ."
   },
   "keywords": [
     "eslint",
@@ -27,9 +23,9 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.19.0"
+    "eslint": "^5.1.0"
   },
   "peerDependencies": {
-    "eslint": "^4.19.0"
+    "eslint": "^5.1.0"
   }
 }
