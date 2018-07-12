@@ -4,7 +4,9 @@ module.exports = {
   'env': {
     node: true
   },
-  'extends': ['sidwood/configs/core'],
+  'extends': [
+    './configs/core.js'
+  ],
   'globals': {},
   'parserOptions': {},
   'rules': {}

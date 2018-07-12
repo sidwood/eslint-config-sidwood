@@ -5,13 +5,13 @@ module.exports = {
     es6: true
   },
   'extends': [
-    'sidwood/rules/best-practices',
-    'sidwood/rules/ecmascript-6',
-    'sidwood/rules/nodejs-commonjs',
-    'sidwood/rules/possible-errors',
-    'sidwood/rules/strict-mode',
-    'sidwood/rules/stylistic-issues',
-    'sidwood/rules/variables'
+    '../rules/best-practices.js',
+    '../rules/ecmascript-6.js',
+    '../rules/nodejs-commonjs.js',
+    '../rules/possible-errors.js',
+    '../rules/strict-mode.js',
+    '../rules/stylistic-issues.js',
+    '../rules/variables.js'
   ],
   'globals': {
     context: true,
